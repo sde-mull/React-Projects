@@ -108,6 +108,10 @@
 	font-size: larger;
 	font-family: sans-serif;
 	color: rgb(197, 219, 241);
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .Categories p:last-child {

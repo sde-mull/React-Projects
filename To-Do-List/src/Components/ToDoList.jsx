@@ -49,7 +49,7 @@ function ToDoList({categorySelected}){
           			<li key={index}> {todo}</li>
         		))}
       			</ul>
-				{categorySelected && <form onSubmit = {handleSubmit}>
+				{categorySelected && <form className = "InputToDo" onSubmit = {handleSubmit}>
 					{(	
 						<input 
 							id = "ToDoListInput" 

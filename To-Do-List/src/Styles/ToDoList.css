@@ -1,8 +1,78 @@
-.ToDoContainer{
-	border: solid 1px black;
-	width: 50vw;
-	height: 90vh;
-	transition: ease 0.5s;
-	box-shadow: 0px 0px 5px lightslategrey;
-	border: solid 2px lightslategray
+.ToDoContainer {
+    border: solid 1px black;
+    width: 50vw;
+    height: 90vh;
+    transition: ease 0.5s;
+    box-shadow: 0px 0px 5px lightslategrey;
+    border: solid 2px lightslategray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	align-items: center;
+}
+
+.InputToDo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    padding: 10px;
+}
+
+#ToDoListInput {
+    height: 3vh;
+    width: 35vw;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 2px solid lightslategray;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#ToDoListInput:focus {
+    border-color: dodgerblue;
+    box-shadow: 0px 2px 8px rgba(30, 144, 255, 0.5);
+}
+
+#ToDoListSubmit {
+    margin-left: 10px;
+    padding: 8px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: dodgerblue;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#ToDoListSubmit:hover {
+    background-color: royalblue;
+}
+
+
+ul {
+    list-style: none; /* Removes default bullet points */
+    padding: 0;
+    margin: 0;
+    width: 95%;
+}
+
+li {
+    background: #f5f5f5;
+    margin: 8px 0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+li:hover {
+    background: #e0e0e0;
 }

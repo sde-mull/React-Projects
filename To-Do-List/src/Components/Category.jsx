@@ -30,8 +30,15 @@ function Category(props){
 		setInputValue(event.target.value);
 	}
 
-	function handleCategoryClick(event){
+	function handleCategoryClickSelect(event){
 		props.onCategorySelect(event.target.textContent);
+	}
+
+	function handleCategoryClickRemove({value}){
+
+    	let arr = category.filter((item) => item !== value);
+
+    	setCategory(arr);
 	}
 
 	return (
@@ -65,8 +72,8 @@ function Category(props){
 						return (
 						<React.Fragment key={index}>
 							<div className={`Categories ${props.categorySelected === value ? "CategoriesActive" : ""}`}>
-								<p onClick={handleCategoryClick} >{value}</p> 
-								<p> X </p>
+								<p onClick = {handleCategoryClickSelect} >{value}</p> 
+								<p onClick = {() => handleCategoryClickRemove({value})} > X </p>
 							</div>
 						</React.Fragment>
 					)})}
