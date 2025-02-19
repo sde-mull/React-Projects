@@ -1,0 +1,129 @@
+.CategoryContainer{
+	width: 50vw;
+	height: 90vh;
+	transition: ease 0.5s;
+	box-shadow: 0px 0px 5px lightslategray;
+	border: solid 2px lightslategray;
+	overflow: auto;
+}
+
+.CategoryHeader{
+	display: flex;
+	justify-content: space-between;
+	font-size: large;
+	font-family: sans-serif;
+	color: lightslategray;
+	box-shadow: 0px 2px 0px lightslategray;
+	align-items: center;
+	height: 5vh;
+	position: sticky;
+    top: 0;
+    z-index: 10;
+	background: rgb(0, 41, 90);
+}
+
+.CategoryTitle{
+	margin-left: 5vw;
+	color: rgb(197, 219, 241);
+}
+
+.CategoryInput{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.CategoryInputField input {
+	width: 30vh;
+	height: 1vh;
+	padding: 8px 12px;
+	font-size: 16px;
+	border: 2px solid lightslategray;
+	border-radius: 12px;
+	outline: none;
+	transition: all 0.3s ease-in;
+	margin-right: 1vw;
+  }
+  
+  .CategoryInputField input:focus {
+	border-color: #4E65FF;
+	box-shadow: 0px 0px 8px rgba(78, 101, 255, 0.5);
+  }
+  
+  #categorySubmit {
+	height: 30px;
+	font-size: 16px;
+	background: #4E65FF;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	padding: 6px 16px;
+	cursor: pointer;
+	transition: background 0.3s ease-in-out;
+	margin-right: 1vw;
+  }
+  
+  #categorySubmit:hover {
+	background: #2a3cb3;
+  }
+  
+  #categorySubmit:active {
+	transform: scale(0.95);
+	box-shadow: 0px 0px 5px rgba(7, 136, 156, 0.7) inset;
+	background: #2a3cb3;
+}
+
+.CategoryAddClose{
+	display: flex;
+	margin-right: 1vw;
+}
+
+.CategoryAddClose:hover{
+	color: rgb(221, 232, 243);
+	cursor: pointer;
+}
+
+.Categories {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 98%;
+	height: 5vh;
+	margin-top: 1vh;
+	margin-left: 5px;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+	box-shadow: 0px 0px 5px rgb(223, 215, 215);
+	transition: ease-in 0.2s;
+}
+
+.Categories:hover{
+	box-shadow: 0px 0px 15px rgb(137, 131, 131);
+}
+
+.Categories p:first-child {
+	margin-right: auto;
+	flex-grow: 1;
+	font-size: larger;
+	font-family: sans-serif;
+	color: rgb(197, 219, 241);
+}
+
+.Categories p:last-child {
+	font-weight: bold;
+	color: rgb(101, 17, 17);
+	cursor: pointer;
+	margin-right: 10px;
+	transition: ease-in 0.2s;
+}
+
+.Categories p:last-child:hover {
+	color: rgb(196, 11, 11);
+}
+
+.CategoriesActive {
+	background: #4E65FF; /* Highlight active category */
+	color: white;
+	font-weight: bold;
+}

@@ -1,0 +1,8 @@
+.ToDoContainer{
+	border: solid 1px black;
+	width: 50vw;
+	height: 90vh;
+	transition: ease 0.5s;
+	box-shadow: 0px 0px 5px lightslategrey;
+	border: solid 2px lightslategray
+}

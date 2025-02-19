@@ -1,0 +1,15 @@
+.Title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Lucida Handwriting', cursive;
+	font-size: 2em;
+	color: lightsteelblue;
+	margin: 0;
+	height: 10vh;
+	text-shadow: 0px 0px 8px black;
+}
+
+.AppContainer{
+	display: flex;
+}
